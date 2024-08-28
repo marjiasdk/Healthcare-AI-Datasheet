@@ -1,0 +1,614 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Irish Hospital Patient Records 2019-2023",
+    "description": "Schema for the Dataset of Irish Hospital Patient Records for AI Model Development, 2019-2023",
+    "type": "object",
+    "properties": {
+      "Metadata": {
+        "type": "object",
+        "properties": {
+          "DatasetName": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "DatasetTitle": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "DatasetVersion": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "DatasetPublisher": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "DatasetLicense": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          }
+        },
+        "required": ["DatasetName", "DatasetTitle", "DatasetVersion", "DatasetPublisher", "DatasetLicense"]
+      },
+      "Purpose": {
+        "type": "object",
+        "properties": {
+          "PurposeOfDataCollection": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "Beneficiaries": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "array", "items": { "type": "string" } }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "BenefitsOfDataUse": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          }
+        },
+        "required": ["PurposeOfDataCollection", "Beneficiaries"]
+      },
+      "SourceInformation": {
+        "type": "object",
+        "properties": {
+          "SourceOfData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "OriginOfData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "EthicalApproval": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "boolean" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "FundingOfData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          }
+        },
+        "required": ["SourceOfData", "OriginOfData", "EthicalApproval"]
+      },
+      "TemporalInformation": {
+        "type": "object",
+        "properties": {
+          "CollectionPeriod": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "EventValidity": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          },
+          "DataValidityEndDate": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          },
+          "ValidDuration": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          }
+        },
+        "required": ["CollectionPeriod"]
+      },
+      "DemographicInformation": {
+        "type": "object",
+        "properties": {
+          "GenderDistribution": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": {
+                "type": "object",
+                "properties": {
+                  "Male": { "type": "integer" },
+                  "Female": { "type": "integer" }
+                },
+                "required": ["Male", "Female"]
+              },
+              "LikelihoodOfGenderBias": {
+                "type": "object",
+                "properties": {
+                  "Label": { "type": "string" },
+                  "Description": { "type": "string" },
+                  "Value": { "type": "number" }
+                }
+              }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "AgeDistribution": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": {
+                "type": "object",
+                "properties": {
+                  "0-18": { "type": "integer" },
+                  "19-64": { "type": "integer" },
+                  "65+": { "type": "integer" }
+                },
+                "required": ["0-18", "19-64", "65+"]
+              },
+              "LikelihoodOfAgeBias": {
+                "type": "object",
+                "properties": {
+                  "Label": { "type": "string" },
+                  "Description": { "type": "string" },
+                  "Value": { "type": "number" }
+                }
+              }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "SocioeconomicDistribution": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": {
+                "type": "object",
+                "properties": {
+                  "Low": { "type": "integer" },
+                  "Middle": { "type": "integer" },
+                  "High": { "type": "integer" }
+                },
+                "required": ["Low", "Middle", "High"]
+              },
+              "LikelihoodOfSocioeconomicBias": {
+                "type": "object",
+                "properties": {
+                  "Label": { "type": "string" },
+                  "Description": { "type": "string" },
+                  "Value": { "type": "number" }
+                }
+              }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "EthnicDistribution": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": {
+                "type": "object",
+                "properties": {
+                  "Caucasian": { "type": "integer" },
+                  "African": { "type": "integer" },
+                  "Asian": { "type": "integer" },
+                  "Other": { "type": "integer" }
+                },
+                "required": ["Caucasian", "African", "Asian", "Other"]
+              },
+              "LikelihoodOfRacialBias": {
+                "type": "object",
+                "properties": {
+                  "Label": { "type": "string" },
+                  "Description": { "type": "string" },
+                  "Value": { "type": "number" }
+                }
+              }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "GeographicDistribution": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": {
+                "type": "object",
+                "properties": {
+                  "Urban": { "type": "integer" },
+                  "Rural": { "type": "integer" }
+                },
+                "required": ["Urban", "Rural"]
+              },
+              "LikelihoodOfGeographicalBias": {
+                "type": "object",
+                "properties": {
+                  "Label": { "type": "string" },
+                  "Description": { "type": "string" },
+                  "Value": { "type": "number" }
+                }
+              }
+            },
+            "required": ["Label", "Description", "Value"]
+          }
+        },
+        "required": [
+          "GenderDistribution",
+          "AgeDistribution",
+          "SocioeconomicDistribution",
+          "EthnicDistribution",
+          "GeographicDistribution"
+        ]
+      },
+      "DataCharacteristics": {
+        "type": "object",
+        "properties": {
+          "MediaType": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "IncompletionOfData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "boolean" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "MissingDataElements": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          },
+          "ReasonsForIncompletion": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          }
+        },
+        "required": ["MediaType", "IncompletionOfData"]
+      },
+      "BiasMitigationMethods": {
+        "type": "object",
+        "properties": {
+          "AppliedBiasMitigationMethods": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "SuggestedBiasMitigationMethods": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          }
+        },
+        "required": ["AppliedBiasMitigationMethods"]
+      },
+      "PersonalData": {
+        "type": "object",
+        "properties": {
+          "PresenceOfPersonalData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "boolean" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "CategoriesOfData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "SensitivityOfData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Level": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Level", "Value"]
+          },
+          "AppliedAnonymizationMethods": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "SuggestedAnonymizationMethods": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          },
+          "ReIdentificationRisk": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Level": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "Value": { "type": "string" }
+            }
+          },
+          "LikelihoodOfIdentification": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "number" }
+            }
+          },
+          "ConsentObtained": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "boolean" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "JustificationForNoConsent": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          }
+        },
+        "required": ["PresenceOfPersonalData", "CategoriesOfData", "SensitivityOfData", "AppliedAnonymizationMethods", "ConsentObtained"]
+      },
+      "RiskAndCompliance": {
+        "type": "object",
+        "properties": {
+          "Jurisdiction": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "ApplicableLaws": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "LegalRiskLevel": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Level": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Level", "Value"]
+          },
+          "ImpactAssessment": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "OtherRisks": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "OverallRiskLevel": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Level": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Level", "Value"]
+          },
+          "AppliedRiskMitigationMethods": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "SuggestedRiskMitigationMethods": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          }
+        },
+        "required": ["Jurisdiction", "ApplicableLaws", "LegalRiskLevel", "ImpactAssessment", "OtherRisks", "OverallRiskLevel", "AppliedRiskMitigationMethods"]
+      },
+      "UsageRestrictions": {
+        "type": "object",
+        "properties": {
+          "AccessRestrictions": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Level": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Level", "Value"]
+          },
+          "PermissibleRestrictions": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          },
+          "ProhibitiveRestrictions": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "ObligatoryRestrictions": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            },
+            "required": ["Label", "Description", "Value"]
+          },
+          "ShareabilityOfData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          },
+          "ReciprocityOfData": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Description": { "type": "string" },
+              "Value": { "type": "string" }
+            }
+          }
+        },
+        "required": ["AccessRestrictions", "ProhibitiveRestrictions", "ObligatoryRestrictions"]
+      }
+    }
+  }
+  
