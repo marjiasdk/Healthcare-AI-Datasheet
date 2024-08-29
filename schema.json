@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Irish Hospital Patient Records 2019-2023",
-    "description": "Schema for the Dataset of Irish Hospital Patient Records for AI Model Development, 2019-2023",
+    "title": "string",
+    "description": "string",
     "type": "object",
     "properties": {
       "Metadata": {
