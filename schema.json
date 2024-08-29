@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "string",
-    "description": "string",
+    "title": "Example Title",
+    "description": "Example Description",
     "type": "object",
     "properties": {
       "Metadata": {
