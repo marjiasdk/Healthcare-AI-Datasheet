@@ -2,9 +2,9 @@
 
 ## Overview
 
-This repository contains the **Healthcare AI Datasheet**, a comprehensive framework designed to improve the transparency, accountability, and ethical standards in AI model development, particularly in healthcare applications. The datasheet provides a structured and machine-readable documentation format to highlight potential biases, data sources, and regulatory compliance (e.g., GDPR), helping developers and researchers mitigate risks in AI deployment.
+This repository contains the Healthcare AI Datasheet, a tool developed to help improve transparency, accountability, and ethics in AI models, specifically for healthcare applications. The datasheet is structured and machine-readable, making it easier to document things like potential biases, data sources, and whether the data complies with regulations like GDPR. This helps developers and researchers reduce risks when using AI.
 
-The **Healthcare AI Datasheet** supports early identification of potential risks, including bias and data quality issues, which can disproportionately affect healthcare outcomes. By adopting this datasheet, developers and researchers can ensure that their AI models are built on a strong foundation of ethical considerations, helping to foster fair and equitable healthcare solutions.
+The datasheet is designed to flag potential risks early on, such as biases or issues with data quality, which can lead to unfair healthcare outcomes. By using this datasheet, developers can ensure their AI models are built with ethical practices in mind, aiming to create more fair and inclusive healthcare systems.
 
 ## Key Features
 
