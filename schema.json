@@ -7,7 +7,7 @@
       "Metadata": {
         "type": "object",
         "properties": {
-          "DatasetName": {
+          "DatasetTitle": {
             "type": "object",
             "properties": {
               "Label": { "type": "string" },
@@ -16,7 +16,7 @@
             },
             "required": ["Label", "Description", "Value"]
           },
-          "DatasetTitle": {
+          "DatasetDescription": {
             "type": "object",
             "properties": {
               "Label": { "type": "string" },
