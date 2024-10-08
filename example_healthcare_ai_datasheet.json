@@ -1,0 +1,215 @@
+{
+  "Metadata": {
+    "DatasetTitle": {
+      "Label": "Title",
+      "Description": "The name of the dataset",
+      "Value": "Healthcare AI Dataset"
+    },
+    "DatasetDescription": {
+      "Label": "Description",
+      "Description": "A brief description of the dataset",
+      "Value": "This dataset includes healthcare records to train AI models."
+    },
+    "DatasetVersion": {
+      "Label": "Version",
+      "Description": "The version number of the dataset",
+      "Value": "1.0"
+    },
+    "DatasetPublisher": {
+      "Label": "Publisher",
+      "Description": "The organization responsible for publishing the dataset",
+      "Value": "Healthcare AI Research Group"
+    },
+    "DatasetLicense": {
+      "Label": "License",
+      "Description": "The license under which the dataset is shared",
+      "Value": "Creative Commons Attribution 4.0 (CC BY 4.0)"
+    }
+  },
+  "Purpose": {
+    "PurposeOfDataCollection": {
+      "Label": "Purpose",
+      "Description": "The reason for collecting the data",
+      "Value": "Improving diagnostic accuracy in healthcare"
+    },
+    "Beneficiaries": {
+      "Label": "Beneficiaries",
+      "Description": "The groups who benefit from the dataset",
+      "Value": ["Healthcare Providers", "Patients", "Researchers"]
+    }
+  },
+  "SourceInformation": {
+    "SourceOfData": {
+      "Label": "Source",
+      "Description": "Where the data was collected from",
+      "Value": "Hospital Patient Records"
+    },
+    "OriginOfData": {
+      "Label": "Origin",
+      "Description": "The original location or institution responsible for the data",
+      "Value": "General Hospital"
+    },
+    "EthicalApproval": {
+      "Label": "Ethical Approval",
+      "Description": "Whether ethical approval was obtained",
+      "Value": true
+    }
+  },
+  "TemporalInformation": {
+    "CollectionPeriod": {
+      "Label": "Collection Period",
+      "Description": "The time period during which the data was collected",
+      "Value": "January 2019 - December 2020"
+    }
+  },
+  "DemographicInformation": {
+    "GenderDistribution": {
+      "Label": "Gender Distribution",
+      "Description": "The distribution of gender in the dataset",
+      "Value": {
+        "Male": 3000,
+        "Female": 3500
+      }
+    },
+    "AgeDistribution": {
+      "Label": "Age Distribution",
+      "Description": "The age distribution in the dataset",
+      "Value": {
+        "0-18": 1000,
+        "19-64": 4000,
+        "65+": 1500
+      }
+    },
+    "SocioeconomicDistribution": {
+      "Label": "Socioeconomic Distribution",
+      "Description": "Socioeconomic distribution of the data subjects",
+      "Value": {
+        "Low": 2000,
+        "Middle": 3000,
+        "High": 500
+      }
+    },
+    "EthnicDistribution": {
+      "Label": "Ethnic Distribution",
+      "Description": "Ethnic breakdown in the dataset",
+      "Value": {
+        "Caucasian": 4000,
+        "African": 1000,
+        "Asian": 1000,
+        "Other": 500
+      }
+    },
+    "GeographicDistribution": {
+      "Label": "Geographic Distribution",
+      "Description": "Geographic location of the dataset subjects",
+      "Value": {
+        "Urban": 4500,
+        "Rural": 1500
+      }
+    }
+  },
+  "DataCharacteristics": {
+    "MediaType": {
+      "Label": "Media Type",
+      "Description": "The type of data contained in the dataset",
+      "Value": ["Text", "Images"]
+    },
+    "IncompletionOfData": {
+      "Label": "Incompletion of Data",
+      "Description": "Whether the dataset has incomplete data",
+      "Value": false
+    }
+  },
+  "BiasMitigationMethods": {
+    "AppliedBiasMitigationMethods": {
+      "Label": "Bias Mitigation Methods",
+      "Description": "Methods used to mitigate bias in the dataset",
+      "Value": "Ensured a representative sample of age groups and genders"
+    }
+  },
+  "PersonalData": {
+    "PresenceOfPersonalData": {
+      "Label": "Personal Data",
+      "Description": "Whether the dataset contains personal data",
+      "Value": true
+    },
+    "CategoriesOfData": {
+      "Label": "Data Categories",
+      "Description": "The types of personal data included",
+      "Value": ["Name", "Age", "Gender", "Health Records"]
+    },
+    "SensitivityOfData": {
+      "Label": "Sensitivity Level",
+      "Description": "Sensitivity of the personal data",
+      "Level": ["High"],
+      "Value": "Health data is considered highly sensitive."
+    },
+    "AppliedAnonymizationMethods": {
+      "Label": "Anonymization Methods",
+      "Description": "Anonymization techniques used",
+      "Value": "Data was anonymized using pseudonymization"
+    },
+    "ConsentObtained": {
+      "Label": "Consent",
+      "Description": "Whether consent was obtained",
+      "Value": true
+    }
+  },
+  "RiskAndCompliance": {
+    "Jurisdiction": {
+      "Label": "Jurisdiction",
+      "Description": "The legal jurisdiction governing the dataset",
+      "Value": "Ireland"
+    },
+    "ApplicableLaws": {
+      "Label": "Applicable Laws",
+      "Description": "The legal frameworks that apply",
+      "Value": "GDPR"
+    },
+    "LegalRiskLevel": {
+      "Label": "Legal Risk Level",
+      "Description": "The level of legal risk associated with using the data",
+      "Level": ["Medium"],
+      "Value": "Some legal risk due to sensitive health information"
+    },
+    "ImpactAssessment": {
+      "Label": "Impact Assessment",
+      "Description": "Impact assessment details",
+      "Value": "Data Protection Impact Assessment (DPIA) was conducted"
+    },
+    "OtherRisks": {
+      "Label": "Other Risks",
+      "Description": "Additional risks associated with the dataset",
+      "Value": "Re-identification risks are minimal but present"
+    },
+    "OverallRiskLevel": {
+      "Label": "Overall Risk Level",
+      "Description": "Combined risk assessment",
+      "Level": ["Medium"],
+      "Value": "Overall risk is moderate due to the nature of the data"
+    },
+    "AppliedRiskMitigationMethods": {
+      "Label": "Risk Mitigation Methods",
+      "Description": "Mitigation methods applied to minimize risks",
+      "Value": "Anonymization, encryption, and access control"
+    }
+  },
+  "UsageRestrictions": {
+    "AccessRestrictions": {
+      "Label": "Access Restrictions",
+      "Description": "Restrictions on accessing the dataset",
+      "Level": ["Restricted"],
+      "Value": "Access restricted to authorized personnel only"
+    },
+    "ProhibitiveRestrictions": {
+      "Label": "Prohibitive Restrictions",
+      "Description": "Restrictions on certain types of usage",
+      "Value": "Commercial use is prohibited"
+    },
+    "ObligatoryRestrictions": {
+      "Label": "Obligatory Restrictions",
+      "Description": "Obligations users must follow",
+      "Value": "Users must acknowledge the dataset source"
+    }
+  }
+}
