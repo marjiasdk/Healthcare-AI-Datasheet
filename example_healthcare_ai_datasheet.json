@@ -1,215 +1,317 @@
 {
   "Metadata": {
     "DatasetTitle": {
-      "Label": "Title",
-      "Description": "The name of the dataset",
-      "Value": "Healthcare AI Dataset"
+      "Label": "Dataset Title",
+      "Description": "The title of the dataset",
+      "Value": "Irish Hospital Patient Records 2019-2023"
     },
     "DatasetDescription": {
-      "Label": "Description",
-      "Description": "A brief description of the dataset",
-      "Value": "This dataset includes healthcare records to train AI models."
+      "Label": "Dataset Description",
+      "Description": "The description of the dataset",
+      "Value": "Dataset of Irish Hospital Patient Records for AI Model Development, 2019-2023"
     },
     "DatasetVersion": {
-      "Label": "Version",
-      "Description": "The version number of the dataset",
-      "Value": "1.0"
+      "Label": "Dataset Version",
+      "Description": "The version of the dataset",
+      "Value": "1.2"
     },
     "DatasetPublisher": {
-      "Label": "Publisher",
-      "Description": "The organization responsible for publishing the dataset",
-      "Value": "Healthcare AI Research Group"
+      "Label": "Dataset Publisher",
+      "Description": "The publisher of the dataset",
+      "Value": "Health Research Board"
     },
     "DatasetLicense": {
-      "Label": "License",
-      "Description": "The license under which the dataset is shared",
-      "Value": "Creative Commons Attribution 4.0 (CC BY 4.0)"
+      "Label": "Dataset License",
+      "Description": "License under which the data is provided",
+      "Value": "CC BY 4.0"
     }
   },
   "Purpose": {
     "PurposeOfDataCollection": {
-      "Label": "Purpose",
-      "Description": "The reason for collecting the data",
-      "Value": "Improving diagnostic accuracy in healthcare"
+      "Label": "Purpose of Data Collection",
+      "Description": "The intended purpose of data collection",
+      "Value": "Clinical research"
     },
     "Beneficiaries": {
       "Label": "Beneficiaries",
-      "Description": "The groups who benefit from the dataset",
-      "Value": ["Healthcare Providers", "Patients", "Researchers"]
+      "Description": "Identifies the groups or individuals who will benefit from the use of the data",
+      "Value": "Healthcare Providers, Patients"
+    },
+    "BenefitsOfDataUse": {
+      "Label": "Benefits of Data Use",
+      "Description": "Specifies the anticipated benefits of using the data",
+      "Value": "Improved patient outcomes through enhanced diagnostic accuracy"
     }
   },
   "SourceInformation": {
     "SourceOfData": {
-      "Label": "Source",
-      "Description": "Where the data was collected from",
-      "Value": "Hospital Patient Records"
+      "Label": "Source of Data",
+      "Description": "Source of the data",
+      "Value": "St. James Hospital, Dublin"
     },
     "OriginOfData": {
-      "Label": "Origin",
-      "Description": "The original location or institution responsible for the data",
-      "Value": "General Hospital"
+      "Label": "Origin of Data",
+      "Description": "Origin of the data",
+      "Value": "St. James's Hospital EHR Systems"
     },
     "EthicalApproval": {
       "Label": "Ethical Approval",
-      "Description": "Whether ethical approval was obtained",
+      "Description": "Indicates whether the use of the data has received ethical approval from relevant bodies",
       "Value": true
+    },
+    "FundingOfData": {
+      "Label": "Funding of Data",
+      "Description": "Entity funding the data collection",
+      "Value": "Health Research Board"
     }
   },
   "TemporalInformation": {
     "CollectionPeriod": {
       "Label": "Collection Period",
-      "Description": "The time period during which the data was collected",
-      "Value": "January 2019 - December 2020"
+      "Description": "The period during which the data was collected",
+      "Value": "2020-01-01/2020-12-31"
+    },
+    "EventValidity": {
+      "Label": "Event Validity",
+      "Description": "Specific events affecting data validity",
+      "Value": "Until the next national census"
+    },
+    "DataValidityEndDate": {
+      "Label": "Data Validity End Date",
+      "Description": "The date until which the dataset is valid",
+      "Value": "2023-12-31"
+    },
+    "ValidDuration": {
+      "Label": "Valid Duration",
+      "Description": "Duration for which the dataset is valid",
+      "Value": "2023-08-06/2025-10-09"
     }
   },
   "DemographicInformation": {
     "GenderDistribution": {
       "Label": "Gender Distribution",
-      "Description": "The distribution of gender in the dataset",
+      "Description": "Percentage distribution of genders in the dataset",
       "Value": {
-        "Male": 3000,
-        "Female": 3500
+        "Male": 45,
+        "Female": 55
       }
     },
-    "AgeDistribution": {
-      "Label": "Age Distribution",
-      "Description": "The age distribution in the dataset",
-      "Value": {
-        "0-18": 1000,
-        "19-64": 4000,
-        "65+": 1500
-      }
-    },
-    "SocioeconomicDistribution": {
-      "Label": "Socioeconomic Distribution",
-      "Description": "Socioeconomic distribution of the data subjects",
-      "Value": {
-        "Low": 2000,
-        "Middle": 3000,
-        "High": 500
-      }
-    },
-    "EthnicDistribution": {
-      "Label": "Ethnic Distribution",
-      "Description": "Ethnic breakdown in the dataset",
-      "Value": {
-        "Caucasian": 4000,
-        "African": 1000,
-        "Asian": 1000,
-        "Other": 500
-      }
+    "LikelihoodOfGenderBias": {
+      "Label": "Likelihood of Gender Bias",
+      "Description": "Likelihood of bias due to gender distribution",
+      "Value": 0.5
     },
     "GeographicDistribution": {
       "Label": "Geographic Distribution",
-      "Description": "Geographic location of the dataset subjects",
+      "Description": "Geographic distribution of data sources",
       "Value": {
-        "Urban": 4500,
-        "Rural": 1500
+        "Urban": 70,
+        "Rural": 30
       }
+    },
+    "LikelihoodOfGeographicalBias": {
+      "Label": "Likelihood of Geographical Bias",
+      "Description": "Likelihood of bias due to geographic distribution",
+      "Value": 0.1
+    },
+    "AgeDistribution": {
+      "Label": "Age Distribution",
+      "Description": "Percentage distribution of age groups",
+      "Value": {
+        "0-18": 20,
+        "19-64": 60,
+        "65+": 20
+      }
+    },
+    "LikelihoodOfAgeBias": {
+      "Label": "Likelihood of Age Bias",
+      "Description": "Likelihood of bias due to age distribution",
+      "Value": 0.7
+    },
+    "SocioeconomicDistribution": {
+      "Label": "Socioeconomic Distribution",
+      "Description": "Percentage distribution of socioeconomic statuses",
+      "Value": {
+        "Low": 30,
+        "Middle": 50,
+        "High": 20
+      }
+    },
+    "LikelihoodOfSocioeconomicBias": {
+      "Label": "Likelihood of Socioeconomic Bias",
+      "Description": "Likelihood of bias due to socioeconomic distribution",
+      "Value": 0.3
+    },
+    "EthnicDistribution": {
+      "Label": "Ethnic Distribution",
+      "Description": "Percentage distribution of ethnicities",
+      "Value": {
+        "Caucasian": 60,
+        "African": 20,
+        "Asian": 15,
+        "Other": 5
+      }
+    },
+    "LikelihoodOfRacialBias": {
+      "Label": "Likelihood of Racial Bias",
+      "Description": "Likelihood of bias due to ethnic distribution",
+      "Value": 0.4
     }
   },
   "DataCharacteristics": {
     "MediaType": {
       "Label": "Media Type",
-      "Description": "The type of data contained in the dataset",
-      "Value": ["Text", "Images"]
+      "Description": "Types of media included",
+      "Value": "Text, Images"
     },
     "IncompletionOfData": {
       "Label": "Incompletion of Data",
-      "Description": "Whether the dataset has incomplete data",
-      "Value": false
+      "Description": "Indicates whether the dataset is incomplete",
+      "Value": true
+    },
+    "MissingDataElements": {
+      "Label": "Missing Data Elements",
+      "Description": "Specifies the particular elements or types of data that are missing from the dataset",
+      "Value": "Detailed demographic information"
+    },
+    "ReasonsForIncompletion": {
+      "Label": "Reasons for Incompletion",
+      "Description": "Reasons for data incompleteness",
+      "Value": "Patient non-response"
     }
   },
   "BiasMitigationMethods": {
     "AppliedBiasMitigationMethods": {
-      "Label": "Bias Mitigation Methods",
+      "Label": "Applied Bias Mitigation Methods",
       "Description": "Methods used to mitigate bias in the dataset",
-      "Value": "Ensured a representative sample of age groups and genders"
+      "Value": "Over-sampling minority classes"
+    },
+    "SuggestedBiasMitigationMethods": {
+      "Label": "Suggested Bias Mitigation Methods",
+      "Description": "Recommended methods for mitigating bias",
+      "Value": "Feedback Loops"
     }
   },
   "PersonalData": {
     "PresenceOfPersonalData": {
-      "Label": "Personal Data",
-      "Description": "Whether the dataset contains personal data",
+      "Label": "Presence of Personal Data",
+      "Description": "Indicates if personal data is present",
       "Value": true
     },
     "CategoriesOfData": {
-      "Label": "Data Categories",
-      "Description": "The types of personal data included",
-      "Value": ["Name", "Age", "Gender", "Health Records"]
+      "Label": "Categories of Data",
+      "Description": "Types of personal data included",
+      "Value": "Name, Age, Address"
     },
     "SensitivityOfData": {
-      "Label": "Sensitivity Level",
-      "Description": "Sensitivity of the personal data",
-      "Level": ["High"],
-      "Value": "Health data is considered highly sensitive."
+      "Label": "Sensitivity of Data",
+      "Description": "Sensitivity level of data",
+      "Value": "High"
     },
     "AppliedAnonymizationMethods": {
-      "Label": "Anonymization Methods",
-      "Description": "Anonymization techniques used",
-      "Value": "Data was anonymized using pseudonymization"
+      "Label": "Applied Anonymization Methods",
+      "Description": "Anonymization methods used",
+      "Value": "Pseudonymization"
+    },
+    "SuggestedAnonymizationMethods": {
+      "Label": "Suggested Anonymization Methods",
+      "Description": "Recommended anonymization approaches",
+      "Value": "Data masking"
+    },
+    "ReIdentificationRisk": {
+      "Label": "Re-Identification Risk",
+      "Description": "Risk of data re-identification",
+      "Value": "Low"
+    },
+    "LikelihoodOfIdentification": {
+      "Label": "Likelihood of Identification",
+      "Description": "Likelihood of identifying individuals",
+      "Value": 0.2
     },
     "ConsentObtained": {
-      "Label": "Consent",
-      "Description": "Whether consent was obtained",
+      "Label": "Consent Obtained",
+      "Description": "Indicates if consent was obtained",
       "Value": true
+    },
+    "JustificationForNoConsent": {
+      "Label": "Justification for No Consent",
+      "Description": "Specifies the justification and methods for using data in cases where consent was not obtained",
+      "Value": "Data anonymized and used for public health research under ethical guidelines"
     }
   },
   "RiskAndCompliance": {
     "Jurisdiction": {
       "Label": "Jurisdiction",
-      "Description": "The legal jurisdiction governing the dataset",
-      "Value": "Ireland"
+      "Description": "Legal jurisdiction governing the data",
+      "Value": "EU"
     },
     "ApplicableLaws": {
       "Label": "Applicable Laws",
-      "Description": "The legal frameworks that apply",
+      "Description": "Laws applicable to data processing",
       "Value": "GDPR"
     },
     "LegalRiskLevel": {
       "Label": "Legal Risk Level",
-      "Description": "The level of legal risk associated with using the data",
-      "Level": ["Medium"],
-      "Value": "Some legal risk due to sensitive health information"
+      "Description": "Assessment of legal risks",
+      "Value": "High"
     },
     "ImpactAssessment": {
       "Label": "Impact Assessment",
-      "Description": "Impact assessment details",
-      "Value": "Data Protection Impact Assessment (DPIA) was conducted"
+      "Description": "Potential impact of data use",
+      "Value": "High impact on patient care"
     },
     "OtherRisks": {
       "Label": "Other Risks",
-      "Description": "Additional risks associated with the dataset",
-      "Value": "Re-identification risks are minimal but present"
+      "Description": "Additional risks identified",
+      "Value": "Data breach risk"
     },
     "OverallRiskLevel": {
       "Label": "Overall Risk Level",
-      "Description": "Combined risk assessment",
-      "Level": ["Medium"],
-      "Value": "Overall risk is moderate due to the nature of the data"
+      "Description": "Assessment of overall risks",
+      "Value": "Medium"
     },
     "AppliedRiskMitigationMethods": {
-      "Label": "Risk Mitigation Methods",
-      "Description": "Mitigation methods applied to minimize risks",
-      "Value": "Anonymization, encryption, and access control"
+      "Label": "Applied Risk Mitigation Methods",
+      "Description": "Methods used to mitigate risks",
+      "Value": "Data encryption"
+    },
+    "SuggestedRiskMitigationMethods": {
+      "Label": "Suggested Risk Mitigation Methods",
+      "Description": "Recommended risk mitigation approaches",
+      "Value": "Regular audits"
     }
   },
   "UsageRestrictions": {
     "AccessRestrictions": {
       "Label": "Access Restrictions",
-      "Description": "Restrictions on accessing the dataset",
-      "Level": ["Restricted"],
-      "Value": "Access restricted to authorized personnel only"
+      "Description": "Level of access an entity will have to the data",
+      "Value": "Public Access"
+    },
+    "PermissibleRestrictions": {
+      "Label": "Permissible Restrictions",
+      "Description": "Allowed usage restrictions",
+      "Value": "Educational use only"
     },
     "ProhibitiveRestrictions": {
       "Label": "Prohibitive Restrictions",
-      "Description": "Restrictions on certain types of usage",
-      "Value": "Commercial use is prohibited"
+      "Description": "Prohibited data uses",
+      "Value": "Sharing with Third Parties Without Consent"
     },
     "ObligatoryRestrictions": {
       "Label": "Obligatory Restrictions",
-      "Description": "Obligations users must follow",
-      "Value": "Users must acknowledge the dataset source"
+      "Description": "Required usage restrictions",
+      "Value": "Must cite source"
+    },
+    "ShareabilityOfData": {
+      "Label": "Shareability of Data",
+      "Description": "Conditions for data sharing",
+      "Value": "Restricted to research institutions"
+    },
+    "ReciprocityOfData": {
+      "Label": "Reciprocity of Data",
+      "Description": "Data sharing reciprocity conditions",
+      "Value": "Shared with contributing partners"
     }
   }
 }
+
