@@ -17,8 +17,8 @@ The datasheet is designed to flag potential risks early on, such as biases or is
 
 - **`LICENSE`**: Specifies the Creative Commons Attribution 4.0 International License (CC BY 4.0) for this project.
 - **`datasheet.md`**: The core datasheet, documenting key elements of the dataset and its use.
+- **`example_healthcare_ai_datasheet.json`**: A sample filled-in datasheet demonstrating how to structure and document healthcare AI datasets using the schema provided.
 - **`schema.json`**: A machine-readable version of the datasheet that can be used to validate and automate dataset documentation.
-- **`example_healthcare_ai_datasheet.json`**: A sample filled-in datasheet demonstrating how to structure and document healthcare AI datasets using the schema provided. 
 
 ## License
 
