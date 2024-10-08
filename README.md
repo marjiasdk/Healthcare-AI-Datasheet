@@ -16,26 +16,22 @@ The datasheet is designed to flag potential risks early on, such as biases or is
 ## Files in the Repository
 
 - **`LICENSE`**: Specifies the MIT License for this project.
-- **`README.md`**: This file, providing an overview of the project.
 - **`datasheet.md`**: The core datasheet, documenting key elements of the dataset and its use.
 - **`schema.json`**: A machine-readable version of the datasheet that can be used to validate and automate dataset documentation.
-
-## Getting Started
-
-To use the datasheet for your AI project:
-1. **Clone this repository**: 
-
-    ```bash
-    git clone https://github.com/your-username/Healthcare-AI-Datasheet.git
-    ```
-
-2. **Review the datasheet**: Open the `datasheet.md` to understand the structure and fields required for your project.
-3. **Integrate into your workflow**: Use the `schema.json` for machine-readable documentation and automated checks.
+- **`example_healthcare_ai_datasheet.json`**: A sample filled-in datasheet demonstrating how to structure and document healthcare AI datasets using the schema provided. 
 
 ## License
 
-This project is licensed under the MIT License – see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0) – see the [LICENSE](./LICENSE) file for details. You are free to:
+
+- **Share**: Copy and redistribute the material in any medium or format.
+- **Adapt**: Remix, transform, and build upon the material for any purpose, even commercially.
+
+**Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
 ## Acknowledgments
 
-This project was developed as part of the **Health Research Board (HRB) funded project** under the **Summer Student Scholarships (SS) scheme**. 
+This project was funded by the **Health Research Board (HRB)** through the **Summer Student
+Scholarships (SS) scheme**. The **ADAPT SFI Centre for Digital Media Technology** is funded by
+**Science Foundation Ireland** through the SFI Research Centres Programme and is co-funded
+under the European Regional Development Fund (ERDF) through Grant#13/RC/2106_P2.
